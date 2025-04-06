@@ -1,0 +1,162 @@
+{
+    "frames": [
+        {
+            "frame": 1,
+            "analysis": {
+                "elbow_angle": "Good",
+                "knee_angle": "Good",
+                "shoulder_tilt": "Perfect",
+                "hip_angle": "Good",
+                "head_tilt": "Needs Improvement"
+            },
+            "issues": [
+                "Increase your elbow angle for better results.",
+                "Decrease your knee angle for better results.",
+                "Decrease your hip angle for better results.",
+                "Decrease your head tilt to improve alignment."
+            ],
+            "prediction": "Incorrect Form"
+        },
+        {
+            "frame": 2,
+            "analysis": {
+                "elbow_angle": "Good",
+                "knee_angle": "Good",
+                "shoulder_tilt": "Perfect",
+                "hip_angle": "Good",
+                "head_tilt": "Needs Improvement"
+            },
+            "issues": [
+                "Increase your elbow angle for better results.",
+                "Decrease your knee angle for better results.",
+                "Decrease your hip angle for better results.",
+                "Decrease your head tilt to improve alignment."
+            ],
+            "prediction": "Incorrect Form"
+        },
+        {
+            "frame": 3,
+            "analysis": {
+                "elbow_angle": "Great",
+                "knee_angle": "Good",
+                "shoulder_tilt": "Perfect",
+                "hip_angle": "Good",
+                "head_tilt": "Needs Improvement"
+            },
+            "issues": [
+                "Decrease your knee angle for better results.",
+                "Decrease your hip angle for better results.",
+                "Decrease your head tilt to improve alignment."
+            ],
+            "prediction": "Incorrect Form"
+        },
+        {
+            "frame": 4,
+            "analysis": {
+                "elbow_angle": "Perfect",
+                "knee_angle": "Good",
+                "shoulder_tilt": "Perfect",
+                "hip_angle": "Good",
+                "head_tilt": "Needs Improvement"
+            },
+            "issues": [
+                "Decrease your knee angle for better results.",
+                "Decrease your hip angle for better results.",
+                "Decrease your head tilt to improve alignment."
+            ],
+            "prediction": "Incorrect Form"
+        },
+        {
+            "frame": 5,
+            "analysis": {
+                "elbow_angle": "Great",
+                "knee_angle": "Great",
+                "shoulder_tilt": "Great",
+                "hip_angle": "Great",
+                "head_tilt": "Needs Improvement"
+            },
+            "issues": [
+                "Decrease your head tilt to improve alignment."
+            ],
+            "prediction": "Incorrect Form"
+        },
+        {
+            "frame": 6,
+            "analysis": {
+                "elbow_angle": "Good",
+                "knee_angle": "Perfect",
+                "shoulder_tilt": "Great",
+                "hip_angle": "Perfect",
+                "head_tilt": "Good"
+            },
+            "issues": [
+                "Decrease your elbow angle for better results.",
+                "Decrease your head tilt for better results."
+            ],
+            "prediction": "Incorrect Form"
+        },
+        {
+            "frame": 7,
+            "analysis": {
+                "elbow_angle": "Needs Improvement",
+                "knee_angle": "Perfect",
+                "shoulder_tilt": "Perfect",
+                "hip_angle": "Perfect",
+                "head_tilt": "Good"
+            },
+            "issues": [
+                "Decrease your elbow angle for better alignment.",
+                "Decrease your head tilt for better results."
+            ],
+            "prediction": "Incorrect Form"
+        },
+        {
+            "frame": 8,
+            "analysis": {
+                "elbow_angle": "Needs Improvement",
+                "knee_angle": "Perfect",
+                "shoulder_tilt": "Perfect",
+                "hip_angle": "Perfect",
+                "head_tilt": "Great"
+            },
+            "issues": [
+                "Decrease your elbow angle for better alignment."
+            ],
+            "prediction": "Incorrect Form"
+        },
+        {
+            "frame": 9,
+            "analysis": {
+                "elbow_angle": "Needs Improvement",
+                "knee_angle": "Great",
+                "shoulder_tilt": "Perfect",
+                "hip_angle": "Great",
+                "head_tilt": "Good"
+            },
+            "issues": [
+                "Decrease your elbow angle for better alignment.",
+                "Decrease your head tilt for better results."
+            ],
+            "prediction": "Incorrect Form"
+        },
+        {
+            "frame": 10,
+            "analysis": {
+                "elbow_angle": "Needs Improvement",
+                "knee_angle": "Great",
+                "shoulder_tilt": "Perfect",
+                "hip_angle": "Great",
+                "head_tilt": "Great"
+            },
+            "issues": [
+                "Decrease your elbow angle for better alignment."
+            ],
+            "prediction": "Incorrect Form"
+        }
+    ],
+    "summary": {
+        "predicted_shot_type": "flick",
+        "actual_shot_type": "flick",
+        "shot_accuracy_percent": 66.8
+    }
+}

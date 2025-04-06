@@ -1,0 +1,102 @@
+[
+    {
+        "frame": 1,
+        "angles": {
+            "elbow_angle": 112.91,
+            "knee_angle": 134.65,
+            "shoulder_tilt": 56.63,
+            "hip_angle": 134.65,
+            "head_tilt": 74.69
+        }
+    },
+    {
+        "frame": 2,
+        "angles": {
+            "elbow_angle": 148.84,
+            "knee_angle": 154.63,
+            "shoulder_tilt": 49.63,
+            "hip_angle": 154.63,
+            "head_tilt": 135.78
+        }
+    },
+    {
+        "frame": 3,
+        "angles": {
+            "elbow_angle": 143.64,
+            "knee_angle": 168.8,
+            "shoulder_tilt": 58.52,
+            "hip_angle": 168.8,
+            "head_tilt": 93.22
+        }
+    },
+    {
+        "frame": 4,
+        "angles": {
+            "elbow_angle": 140.15,
+            "knee_angle": 163.42,
+            "shoulder_tilt": 52.67,
+            "hip_angle": 163.42,
+            "head_tilt": 109.5
+        }
+    },
+    {
+        "frame": 5,
+        "angles": {
+            "elbow_angle": 142.53,
+            "knee_angle": 151.13,
+            "shoulder_tilt": 59.28,
+            "hip_angle": 151.13,
+            "head_tilt": 132.6
+        }
+    },
+    {
+        "frame": 6,
+        "angles": {
+            "elbow_angle": 142.39,
+            "knee_angle": 170.79,
+            "shoulder_tilt": 61.42,
+            "hip_angle": 170.79,
+            "head_tilt": 167.71
+        }
+    },
+    {
+        "frame": 7,
+        "angles": {
+            "elbow_angle": 111.5,
+            "knee_angle": 164.04,
+            "shoulder_tilt": 66.62,
+            "hip_angle": 164.04,
+            "head_tilt": 170.43
+        }
+    },
+    {
+        "frame": 8,
+        "angles": {
+            "elbow_angle": 109.6,
+            "knee_angle": 141.66,
+            "shoulder_tilt": 67.92,
+            "hip_angle": 141.66,
+            "head_tilt": 162.16
+        }
+    },
+    {
+        "frame": 9,
+        "angles": {
+            "elbow_angle": 115.6,
+            "knee_angle": 170.97,
+            "shoulder_tilt": 69.78,
+            "hip_angle": 170.97,
+            "head_tilt": 174.68
+        }
+    },
+    {
+        "frame": 10,
+        "angles": {
+            "elbow_angle": 119.51,
+            "knee_angle": 158.48,
+            "shoulder_tilt": 77.54,
+            "hip_angle": 158.48,
+            "head_tilt": 170.77
+        }
+    }
+]

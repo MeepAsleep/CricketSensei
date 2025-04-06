@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results - CricketSensei</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="subcontainer">
+        <h2>Shot Analysis Result</h2>
+
+        <!-- Dynamic Shot Type Video -->
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="{{ url_for('static', filename='videos/' + shot_type + '.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Keyframes with Feedback -->
+        <div class="frames-grid">
+            {% for frame_num, phase_name in [(2, 'Starting Phase'), (6, 'Middle Phase'), (9, 'Ending Phase')] %}
+            <div class="frame-box">
+                <img src="{{ url_for('static', filename='output_frames/' + frame_num|string + '.jpg') }}" alt="Frame {{ frame_num }}" class="keyframe">
+                <div class="feedback">
+                    <h3>{{ phase_name }}</h3>
+                    {% if feedback and feedback.get(phase_name) %}
+                        {% for tip in feedback[phase_name] %}
+                            <p class="feedback-text"> ● {{ tip }}</p>
+                        {% endfor %}
+                    {% else %}
+                        <p class="feedback-text success">✔ Looks good!</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <form action="/" method="get">
+            <br>
+            <br>
+            <button type="submit">Analyze Another Shot</button>
+        </form>
+    </div>
+</body>
+</html>

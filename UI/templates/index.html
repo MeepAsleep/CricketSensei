@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricketSensei</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Step 1: Select Shot and Upload Video -->
+        <div id="step-1">
+            <h1>Cricket Sensei</h1>
+            <h3>Intelligent Shot Analyzer</h3>
+
+            <div class="shot-selector">
+                <label for="shot-type">Select Shot Type:</label>
+                <select id="shot-type" name="shot_type">
+                    <option value="cover">Cover Drive</option>
+                    <option value="pull">Pull Shot</option>
+                    <option value="flick">Flick</option>
+                    <option value="hook">Hook</option>
+                </select>
+            </div>
+
+            <form id="upload-form" method="post" enctype="multipart/form-data">
+                <label for="video">Upload Your Shot Video:</label>
+                <input type="file" id="video" name="video" accept="video/*" required>
+                <button id="analyze-button" type="submit">Analyze Shot</button>
+            </form>
+        </div>
+
+        <!-- Step 2: Loading State -->
+        <div id="step-2" class="hidden">
+            <h2>Analyzing Your Shot...</h2>
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Hide upload section, show loading animation
+            document.getElementById('step-1').classList.add('hidden');
+            document.getElementById('step-2').classList.remove('hidden');
+
+            const formData = new FormData(this);
+            formData.append("shot_type", document.getElementById('shot-type').value);
+
+            fetch('/', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                    document.getElementById('step-1').classList.remove('hidden');
+                    document.getElementById('step-2').classList.add('hidden');
+                } else {
+                    window.location.href = `/results?output=${encodeURIComponent(data.output)}&shot_type=${encodeURIComponent(data.shot_type)}`;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while uploading the file.');
+                document.getElementById('step-1').classList.remove('hidden');
+                document.getElementById('step-2').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
